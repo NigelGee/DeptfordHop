@@ -13,7 +13,7 @@ struct VenueName: View {
         
         VStack(alignment: .leading) {
             
-                Text("The Full Nelson") // This to be taken from iCloud dB
+            Text("The Full Nelson") // This to be taken from iCloud dB
                     .font(.title)
                     .bold()
     

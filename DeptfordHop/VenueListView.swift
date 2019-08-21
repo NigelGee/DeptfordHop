@@ -9,14 +9,24 @@
 import SwiftUI
 
 struct VenueListView: View {
+    @EnvironmentObject var observedData: ObservedData
+    
     var body: some View {
         
         NavigationView {
             
-            List(0..<5) { item in
-                NavigationLink(destination: DetailsView()) {
-                    VenueCellView()
+            List {
+                
+                NavigationLink(destination: AboutView()){
+                    Text("About")
                 }
+                
+                ForEach (observedData.venues) { venue in
+                    NavigationLink(destination: DetailsView(venue: venue).environmentObject(self.observedData)) {
+                        VenueCellView(venue: venue)
+                    }
+                }
+                
             }
             .navigationBarTitle(Text("Deptford Hop"), displayMode: .large)
         }
@@ -30,16 +40,16 @@ struct VenueListView_Previews: PreviewProvider {
         Group {
             
             VenueListView()
-/*
-            VenueListView()
-                .environment(\.colorScheme, .dark)
-            
-            VenueListView()
-                .environment(\.sizeCategory, .extraExtraExtraLarge)
-            
-            VenueListView()
-                .previewDevice("iPhone SE")
- */
+            /*
+             VenueListView()
+             .environment(\.colorScheme, .dark)
+             
+             VenueListView()
+             .environment(\.sizeCategory, .extraExtraExtraLarge)
+             
+             VenueListView()
+             .previewDevice("iPhone SE")
+             */
         }
     }
 }

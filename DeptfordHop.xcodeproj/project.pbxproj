@@ -25,6 +25,8 @@
 		8B6CC96F230420CD0021767E /* VenueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6CC96E230420CD0021767E /* VenueData.swift */; };
 		8BA70A292300359E001E58E4 /* VenueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA70A282300359E001E58E4 /* VenueName.swift */; };
 		8BA70A2B23004DAD001E58E4 /* VenueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA70A2A23004DAD001E58E4 /* VenueListView.swift */; };
+		8BB6E5B3230C5516003A5813 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6E5B2230C5516003A5813 /* AboutView.swift */; };
+		8BEABD7F230B08E5000CD2BC /* ObservedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEABD7E230B08E5000CD2BC /* ObservedData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		8B6CC96E230420CD0021767E /* VenueData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueData.swift; sourceTree = "<group>"; };
 		8BA70A282300359E001E58E4 /* VenueName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueName.swift; sourceTree = "<group>"; };
 		8BA70A2A23004DAD001E58E4 /* VenueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListView.swift; sourceTree = "<group>"; };
+		8BB6E5B2230C5516003A5813 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		8BEABD7E230B08E5000CD2BC /* ObservedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 				8B6CC9682303978C0021767E /* VenueDescriptionFull.swift */,
 				8B4B042D22FEEAC90083F6CC /* PhotoView.swift */,
 				8B4B043122FEFE650083F6CC /* MapView.swift */,
+				8BB6E5B2230C5516003A5813 /* AboutView.swift */,
 			);
 			name = "Supporting Views";
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			children = (
 				8B6CC960230241ED0021767E /* Venue.swift */,
 				8B6CC96E230420CD0021767E /* VenueData.swift */,
+				8BEABD7E230B08E5000CD2BC /* ObservedData.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -332,8 +338,10 @@
 				8B4B043222FEFE650083F6CC /* MapView.swift in Sources */,
 				8B4B043022FEFBFC0083F6CC /* DetailsView.swift in Sources */,
 				8B6CC96F230420CD0021767E /* VenueData.swift in Sources */,
+				8BB6E5B3230C5516003A5813 /* AboutView.swift in Sources */,
 				8B409659230030AC00B3A93D /* VenueCellView.swift in Sources */,
 				8B2C710622FD6414005BCEF7 /* SceneDelegate.swift in Sources */,
+				8BEABD7F230B08E5000CD2BC /* ObservedData.swift in Sources */,
 				8BA70A2B23004DAD001E58E4 /* VenueListView.swift in Sources */,
 				8B4B042E22FEEAC90083F6CC /* PhotoView.swift in Sources */,
 			);

@@ -9,18 +9,21 @@
 import SwiftUI
 import CoreLocation
 import UIKit
+import CloudKit
 
-class Venue: NSObject, Identifiable, Decodable {
-    var id: Int = 0
-    var name: String = ""
-    var address: String = ""
-    var type: String = ""
-    var webAddress: String = ""
-    var openingTimes: String = ""
-    var venueDescription: String = ""
-    var rating: Int = 0
-    var latitude: Double = 0.0
-    var longitude: Double = 0.0
+class Venue: NSObject, Identifiable {
+
+    var racordID: CKRecord.ID!
+    var id: Int!
+    var name: String!
+    var address: String!
+    var type: String!
+    var webAddress: String!
+    var openingTimes: String!
+    var venueDescription: String!
+    var rating: Int!
+    var latitude: Double!
+    var longitude: Double!
 //    var storedImage: Image  = image!!
     
 //    fileprivate var coordinates: Coordinates

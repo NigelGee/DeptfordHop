@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct VenueCellView: View {
+    @EnvironmentObject var observedData: ObservedData
+    var venue: Venue
+    
     var body: some View {
         
         HStack {
@@ -17,7 +20,7 @@ struct VenueCellView: View {
                 .frame(width: 50, height: 50)
                 .clipShape(Circle())
             
-            Text("The Full Nelson")
+            Text(venue.name) // This to be taken from iCloud dB
             
             Spacer()
             
@@ -46,7 +49,7 @@ struct VenueCellView: View {
 #if DEBUG
 struct VenueCellView_Previews: PreviewProvider {
     static var previews: some View {
-        VenueCellView()
+        VenueCellView(venue: venuesData[0])
     }
 }
 #endif

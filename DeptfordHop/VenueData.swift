@@ -9,36 +9,46 @@
 import SwiftUI
 import CloudKit
 
-let venueData: [Venue] = loadVenues("DeptfordHopData")
 
-func loadVenues<T: Decodable>(_  crawlName: String, as type: T.Type = T.self) -> T {
- 
-    let container = CKContainer.default()
-    let publicData = container.publicCloudDatabase
-    let query = CKQuery(recordType: crawlName, predicate: NSPredicate(format: "TRUEPREDICATE", argumentArray: nil))
+var venuesData: [Venue] = loadVenues()
+var data = [Venue]()
+
+func loadVenues() -> [Venue] {
     
-    let venueData = Venue()
+    let pred = NSPredicate(value: true)
+    let sort = NSSortDescriptor(key: "creationDate", ascending: false)
+    let query = CKQuery(recordType: "DeptfordHopData", predicate: pred)
+    query.sortDescriptors = [sort]
     
-    publicData.perform(query, inZoneWith: nil) { (venues, error) in
-        if error == nil {
-            for venue in venues! {
-                
-                venueData.name = venue["name"] as! String
-                venueData.address = venue["address"] as! String
-                venueData.type = venue["type"] as! String
-                venueData.webAddress = venue["wedAddress"] as! String
-                venueData.openingTimes = venue["openingTimes"] as! String
-                venueData.venueDescription = venue["description"] as! String
-                venueData.rating = venue["rating"] as! Int
-//                venueData.latitude = venue["coordiante.latitude"] as! CLLocation          STORED ICLOUD AS coordinate(latitude)
-//                venueData.longitude = venue["coordiante.longitude"] as! CLLocation        STORED ICLOUD AS coordinate(longitude)
-//                venueData.storedImage = venue["image"] as! Image                          STORED AS ASSET
-                
+    let operation = CKQueryOperation(query: query)
+    operation.desiredKeys = ["id","name", "address"]
+    operation.resultsLimit = 50
+    
+    var newVenues = [Venue]()
+    
+    
+    operation.recordFetchedBlock = { record in
+        let venue = Venue()
+        venue.racordID = record.recordID
+        venue.id = record["id"]
+        venue.name = record["name"]
+        venue.address = record["address"]
+        newVenues.append(venue)
+    }
+    
+    operation.queryCompletionBlock = {(cursor, error) in
+        DispatchQueue.main.async {
+            if error == nil {
+                data = newVenues
+            } else {
+                print(error!.localizedDescription)
             }
-        } else {
-            print(error as Any)
         }
     }
+    
+    CKContainer.default().publicCloudDatabase.add(operation)
+    
+    return data
 }
 
- 
+

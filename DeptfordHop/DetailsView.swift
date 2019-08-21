@@ -9,6 +9,14 @@
 import SwiftUI
 
 struct DetailsView: View {
+    @EnvironmentObject var observedData: ObservedData
+    
+    var venue: Venue
+    
+    var venueIndex: Int {
+        observedData.venues.firstIndex(where: {$0.id == venue.id})!
+    }
+    
     var body: some View {
         
         VStack {
@@ -40,7 +48,9 @@ struct DetailsView: View {
 #if DEBUG
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-            DetailsView()
+        let observedData = ObservedData()
+        return DetailsView(venue: observedData.venues[0])
+            .environmentObject(observedData)
     }
 }
 #endif
