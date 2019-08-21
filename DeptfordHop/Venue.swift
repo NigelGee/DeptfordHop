@@ -17,13 +17,13 @@ class Venue: NSObject, Identifiable {
     var id: Int!
     var name: String!
     var address: String!
-    var type: String!
-    var webAddress: String!
-    var openingTimes: String!
-    var venueDescription: String!
-    var rating: Int!
-    var latitude: Double!
-    var longitude: Double!
+//    var type: String!
+//    var webAddress: String!
+//    var openingTimes: String!
+//    var venueDescription: String!
+//    var rating: Int!
+//    var latitude: Double!
+//    var longitude: Double!
 //    var storedImage: Image  = image!!
     
 //    fileprivate var coordinates: Coordinates

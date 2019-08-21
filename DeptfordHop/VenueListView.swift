@@ -26,7 +26,6 @@ struct VenueListView: View {
                         VenueCellView(venue: venue)
                     }
                 }
-                
             }
             .navigationBarTitle(Text("Deptford Hop"), displayMode: .large)
         }

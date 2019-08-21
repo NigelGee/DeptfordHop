@@ -7,17 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E3BD0858-F610-407D-83AC-BAF28BDD10C6"
-            shouldBeEnabled = "No"
+            uuid = "94877CC5-35FB-4370-BEB9-D1475FCC5092"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DeptfordHop/VenueData.swift"
+            filePath = "DeptfordHop/VenueListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "loadVenues()"
-            landmarkType = "9">
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "94877CC5-35FB-4370-BEB9-D1475FCC5092 - e706f352e9a222cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (DeptfordHop.Venue) -&gt; SwiftUI.NavigationLink&lt;DeptfordHop.VenueCellView, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.environmentObject&lt;A where A1: Combine.ObservableObject&gt;(A1) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Text, DeptfordHop.AboutView&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;DeptfordHop.Venue&gt;, Swift.ObjectIdentifier, SwiftUI.NavigationLink&lt;DeptfordHop.VenueCellView, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.environmentObject&lt;A where A1: Combine.ObservableObject&gt;(A1) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in DeptfordHop.VenueListView.body.getter : some"
+                  moduleName = "DeptfordHop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nigelgee/Library/CloudStorage/iCloud%20Drive/Desktop/DeptfordHop/DeptfordHop/VenueListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "134">
+               </Location>
+               <Location
+                  uuid = "94877CC5-35FB-4370-BEB9-D1475FCC5092 - c1659089ad5f96b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; DeptfordHop.VenueCellView in closure #2 (DeptfordHop.Venue) -&gt; SwiftUI.NavigationLink&lt;DeptfordHop.VenueCellView, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.environmentObject&lt;A where A1: Combine.ObservableObject&gt;(A1) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Text, DeptfordHop.AboutView&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;DeptfordHop.Venue&gt;, Swift.ObjectIdentifier, SwiftUI.NavigationLink&lt;DeptfordHop.VenueCellView, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.environmentObject&lt;A where A1: Combine.ObservableObject&gt;(A1) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in DeptfordHop.VenueListView.body.getter : some"
+                  moduleName = "DeptfordHop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nigelgee/Library/CloudStorage/iCloud%20Drive/Desktop/DeptfordHop/DeptfordHop/VenueListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -24,7 +24,7 @@ struct VenueCellView: View {
             
             Spacer()
             
-            //TODO:- change "rating" on which star tapped
+            //TODO:- display "rating" on which star depending on which star tapped
             Image(systemName: "star.fill")
                 .imageScale(.small)
                 .foregroundColor(.yellow)

@@ -16,7 +16,7 @@ var data = [Venue]()
 func loadVenues() -> [Venue] {
     
     let pred = NSPredicate(value: true)
-    let sort = NSSortDescriptor(key: "creationDate", ascending: false)
+    let sort = NSSortDescriptor(key: "id", ascending: true)
     let query = CKQuery(recordType: "DeptfordHopData", predicate: pred)
     query.sortDescriptors = [sort]
     
@@ -25,7 +25,6 @@ func loadVenues() -> [Venue] {
     operation.resultsLimit = 50
     
     var newVenues = [Venue]()
-    
     
     operation.recordFetchedBlock = { record in
         let venue = Venue()
