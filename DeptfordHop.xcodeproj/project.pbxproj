@@ -23,9 +23,11 @@
 		8B6CC9672302EDC20021767E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6CC9662302EDC20021767E /* CloudKit.framework */; };
 		8B6CC9692303978C0021767E /* VenueDescriptionFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6CC9682303978C0021767E /* VenueDescriptionFull.swift */; };
 		8B6CC96F230420CD0021767E /* VenueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6CC96E230420CD0021767E /* VenueData.swift */; };
+		8B82F44323483BD600772430 /* AnimatedCicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B82F44223483BD600772430 /* AnimatedCicle.swift */; };
 		8BA70A292300359E001E58E4 /* VenueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA70A282300359E001E58E4 /* VenueName.swift */; };
 		8BA70A2B23004DAD001E58E4 /* VenueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA70A2A23004DAD001E58E4 /* VenueListView.swift */; };
 		8BB6E5B3230C5516003A5813 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6E5B2230C5516003A5813 /* AboutView.swift */; };
+		8BDF87D3234614AD0020F25D /* Crawls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF87D2234614AD0020F25D /* Crawls.swift */; };
 		8BEABD7F230B08E5000CD2BC /* ObservedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEABD7E230B08E5000CD2BC /* ObservedData.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,9 +72,11 @@
 		8B6CC9662302EDC20021767E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8B6CC9682303978C0021767E /* VenueDescriptionFull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDescriptionFull.swift; sourceTree = "<group>"; };
 		8B6CC96E230420CD0021767E /* VenueData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueData.swift; sourceTree = "<group>"; };
+		8B82F44223483BD600772430 /* AnimatedCicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCicle.swift; sourceTree = "<group>"; };
 		8BA70A282300359E001E58E4 /* VenueName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueName.swift; sourceTree = "<group>"; };
 		8BA70A2A23004DAD001E58E4 /* VenueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListView.swift; sourceTree = "<group>"; };
 		8BB6E5B2230C5516003A5813 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		8BDF87D2234614AD0020F25D /* Crawls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crawls.swift; sourceTree = "<group>"; };
 		8BEABD7E230B08E5000CD2BC /* ObservedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +130,7 @@
 		8B2C710222FD6414005BCEF7 /* DeptfordHop */ = {
 			isa = PBXGroup;
 			children = (
+				8BDF87D1234614700020F25D /* Crawls */,
 				8B6CC9642302E22B0021767E /* DeptfordHop.entitlements */,
 				8B2C710322FD6414005BCEF7 /* AppDelegate.swift */,
 				8B2C710522FD6414005BCEF7 /* SceneDelegate.swift */,
@@ -170,6 +175,7 @@
 		8B4B043322FF0DC20083F6CC /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				8B82F44223483BD600772430 /* AnimatedCicle.swift */,
 				8B409658230030AC00B3A93D /* VenueCellView.swift */,
 				8BA70A282300359E001E58E4 /* VenueName.swift */,
 				8B40965623001C3E00B3A93D /* VenueDescription.swift */,
@@ -197,6 +203,14 @@
 				8B6CC9662302EDC20021767E /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BDF87D1234614700020F25D /* Crawls */ = {
+			isa = PBXGroup;
+			children = (
+				8BDF87D2234614AD0020F25D /* Crawls.swift */,
+			);
+			name = Crawls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B40965723001C3E00B3A93D /* VenueDescription.swift in Sources */,
+				8B82F44323483BD600772430 /* AnimatedCicle.swift in Sources */,
 				8B6CC961230241ED0021767E /* Venue.swift in Sources */,
 				8B6CC9692303978C0021767E /* VenueDescriptionFull.swift in Sources */,
 				8B2C710422FD6414005BCEF7 /* AppDelegate.swift in Sources */,
@@ -339,6 +354,7 @@
 				8B4B043022FEFBFC0083F6CC /* DetailsView.swift in Sources */,
 				8B6CC96F230420CD0021767E /* VenueData.swift in Sources */,
 				8BB6E5B3230C5516003A5813 /* AboutView.swift in Sources */,
+				8BDF87D3234614AD0020F25D /* Crawls.swift in Sources */,
 				8B409659230030AC00B3A93D /* VenueCellView.swift in Sources */,
 				8B2C710622FD6414005BCEF7 /* SceneDelegate.swift in Sources */,
 				8BEABD7F230B08E5000CD2BC /* ObservedData.swift in Sources */,

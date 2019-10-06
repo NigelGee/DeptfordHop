@@ -14,7 +14,7 @@ struct VenueName: View {
         VStack(alignment: .leading) {
             
             Text("The Full Nelson") // This to be taken from iCloud dB
-                    .font(.title)
+                .font(.headline)
                     .bold()
     
                 HStack {
@@ -30,8 +30,8 @@ struct VenueName: View {
                     Image(systemName: "star")
                         .foregroundColor(.gray)
                 }
-                .imageScale(.large)
-                .padding(.bottom, 20)
+                .imageScale(.medium)
+                .padding(.bottom)
                 
             
             HStack {
@@ -42,14 +42,14 @@ struct VenueName: View {
                 Text("Vegan") // This to be taken from iCloud dB
             }
             .font(.subheadline)
-            .padding(.top, -10)
+            .padding(.bottom, 5)
             
             HStack {
                 Spacer()
                 Text("Tues–Fri 4–11, Sat 12–11, Sun 11–4") // This to be taken from iCloud dB
             }
             .font(.footnote)
-            .padding(.top, -10)
+            .padding(.top, -5)
         }
         .padding()
         .padding(.top, -10)

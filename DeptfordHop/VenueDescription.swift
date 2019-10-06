@@ -15,8 +15,11 @@ struct VenueDescription: View {
         
             Text("With my friend being Vegan, we were glad to find this hidden gem. We were even happier that there were a few seats available (it’s a rather small place). The food was absolutely lovely and the service was excellent.")
                 .font(.body)
+                .frame(minHeight: 0, maxHeight: .infinity)
                 .padding()
-        
+                
+            
+            
     }
 }
 

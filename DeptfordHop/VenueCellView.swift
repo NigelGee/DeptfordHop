@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct VenueCellView: View {
-    @EnvironmentObject var observedData: ObservedData
-    var venue: Venue
+//    @EnvironmentObject var observedData: ObservedData
+//    var venue: Venue
     
     var body: some View {
         
@@ -19,8 +19,11 @@ struct VenueCellView: View {
             Image("The Full Nelson").resizable() // This to be taken from iCloud dB
                 .frame(width: 50, height: 50)
                 .clipShape(Circle())
+                .overlay(Circle().stroke(Color(.white)))
+                .shadow(radius: 2)
             
-            Text(venue.name) // This to be taken from iCloud dB
+//            Text(venue.name) // This to be taken from iCloud dB
+            Text("The Full Nelson")
             
             Spacer()
             
@@ -49,7 +52,8 @@ struct VenueCellView: View {
 #if DEBUG
 struct VenueCellView_Previews: PreviewProvider {
     static var previews: some View {
-        VenueCellView(venue: venuesData[0])
+//        VenueCellView(venue: venuesData[0])
+        VenueCellView()
     }
 }
 #endif

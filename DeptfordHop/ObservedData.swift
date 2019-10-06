@@ -10,7 +10,6 @@ import SwiftUI
 import Combine
 
 final class ObservedData: ObservableObject {
-    @Published var venues = venuesData
-
+    @Published var venues: [Venue] = venuesData
 }
 

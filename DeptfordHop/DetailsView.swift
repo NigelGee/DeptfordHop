@@ -9,14 +9,13 @@
 import SwiftUI
 
 struct DetailsView: View {
-    @EnvironmentObject var observedData: ObservedData
-    
-    var venue: Venue
-    
-    var venueIndex: Int {
-        observedData.venues.firstIndex(where: {$0.id == venue.id})!
-    }
-    
+//    @EnvironmentObject var observedData: ObservedData
+//    var venue: Venue
+//
+//    var venueIndex: Int {
+//        observedData.venues.firstIndex(where: {$0.id == venue.id})!
+//    }
+//
     var body: some View {
         
         VStack {
@@ -33,9 +32,11 @@ struct DetailsView: View {
             
             Text("www.theappforest.co.uk")
                 .font(.footnote)
-                .padding(.top, -10)
+                .padding(.top, -18)
+            
             NavigationLink(destination: VenueDescriptionFull()) {
                 VenueDescription()
+                    .frame(minHeight: 0, maxHeight: .infinity)
             }
             .padding(.top, -10)
             
@@ -48,9 +49,10 @@ struct DetailsView: View {
 #if DEBUG
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        let observedData = ObservedData()
-        return DetailsView(venue: observedData.venues[0])
-            .environmentObject(observedData)
+//        let observedData = ObservedData()
+//        return DetailsView(venue: observedData.venues[0])
+//            .environmentObject(observedData)
+        DetailsView()
     }
 }
 #endif

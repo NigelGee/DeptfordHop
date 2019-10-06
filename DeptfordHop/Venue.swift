@@ -17,6 +17,7 @@ class Venue: NSObject, Identifiable {
     var id: Int!
     var name: String!
     var address: String!
+    
 //    var type: String!
 //    var webAddress: String!
 //    var openingTimes: String!
